@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #5CDB95;
+}
+
+.nav_container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+h3 {
+	line-height: 25px;
+}
+
+header {
+	background: #EDF5E1;
+	color: #05386B;
+	border-style: solid;
+	border-padding: 10px;
+	border-width: 1px;
+}
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+nav {
+	float: right;
+	font-size: 10px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none; /*gets rid of bullet points*/
+	background: #EDF5E1;
+}
+
+nav li {
+	display: inline-block; /* left to right not up to down */
+	margin-left: 70px;
+	padding-top: 23px;
+	position: relative;
+	background: #EDF5E1;
+}
+
+nav ul li a {
+	color: #444;
+	text-decoration: none; /*no underline for links*/
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #05386B;
+	background: #EDF5E1;
+}
+
+nav a:hover { /*Changes text color when mouse is over it*/
+	color: #000;
+}
+
+nav a:before {
+	content: ''; /* no idea what this does*/
+	display: block;
+
+	/*line ontop of nav elements*/
+	height: 5px;
+	width: 0%;
+	background-color: #444;
+	position: absolute;
+	top: 0;
+	/*                         */
+
+	transition: all ease-in-out 250ms; /* hover over elements in nav bar*/
+}
+
+nav a:hover:before {
+	width: 100%;
+
+}
+
+.logo {
+	float: left;
+	padding: 0px 0;
+	font-size: 20px;
+	background: #EDF5E1;
+}
+
+.intro {
+	border-style: solid;
+	border-radius: 5%;
+	border-color: black;
+	border-width: 3px;
+	padding: 2px;
+	margin: 180px 500px;
+	margin-bottom: 300px;
+
+}
+#about {
+	border-style: solid;
+	border-color: black;
+}
+#about ul li img {
+	width: 200px;
+	height: 200px;
+	margin: auto 50px;
+}
+#about ul {
+	list-style: none;
+}
+#about li {
+	display: inline-block;
+}
+#about h3 {
+	text-align: left;
+	margin: auto 40px;
+	line-height: 25px;
+}
+
+.games {
+	color: purple;
+}
+
+
+
+
+
+.projecttransition {
+	margin-top: 200px;
+}
+#projects {
+	border-style: solid;
+	border-color: black;
+	margin-top: 50px;
+}
+#projects h3 {
+	max-width: 1000px;
+	margin-left: 150px;
+}
+.demonstration {
+	display: inline-block;
+	padding-bottom: 5px;
+}
+#projects iframe {
+	float: left;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+
+#projects .corner-robot .code {
+	float: right;
+	margin-top: auto;
+	margin-left: 50px;
+	margin-bottom: 20px;
+	max-height: 315px;
+	overflow: scroll;
+	text-align: left;
+	background: #379683;
+	white-space: pre; /* adds the spaces where I need them */
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 20px;
+	line-height: 25px;
+}
+
+.euler {
+	border: 1px;
+	border-style: solid;
+}
+.mult4 {
+	white-space: pre;
+	float: left;
+	max-width: 50%;
+	border-style: solid;
+	border: 10px;
+}
+.autotest {
+	white-space: pre;
+	float: right;
+	max-width: 50%;
+	border-style: solid;
+	border: 10px;
+}
+
+.autotest h3,
+.mult4 h3 {
+	text-align: left;
+	background: #379683;
+	overflow: scroll;
+	max-height: 500px;
+	max-width: 20px;
+	margin-right: 70px;
+	padding: 1px 30px;
+}
+
+.rapidrobo {
+    margin-bottom: 50px;
+    border-style: solid;
+    border: 10px;
+    border-width: 1px;
+}
+.rapidrobo video {
+    padding-left: 70px;
+}
+
+.music {
+    margin-bottom: 50px;
+    border-style: solid;
+    border: 10px;
+}
+
+.random ul li {
+    display: inline-block;
+}
+
+.random ul {
+    list-style: none;
+}
