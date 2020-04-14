@@ -1,0 +1,7 @@
+Cooper Hanson
+
+Resume --- About
+
+Resume = Work Experience, Python, Web Dev, Mobile
+
+About = Miata, Birthday, Contact Info

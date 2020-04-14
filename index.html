@@ -1,178 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html>
-    <head>
-        <title>Cooper's Portfolio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This scales it to device resolution so you can see it guuci on your phone too -->
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
+
+<head>
+    <meta http-equiv="author"content="Cooper Hanson" />
+    <meta name="description"content="Cooper Hanson's Portfolio"/>
+    <!-- <meta http-equiv="content-language" content="en-us" -->
+
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Cooper Hanson</title>
+</head>
+
+
+
+<!-- Body -->
+<body>
     <header>
-        <div class="nav_container">
-            <h1 class="logo">Cooper Hanson</h1> <!-- make a logo? -->
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#random">Random</a></li>
-                </ul>
-            </nav>
-        </div>
+        <p>This is my portfolio</p>
     </header>
-    <div id="home">
-            </div>
-        <div class="intro">
-            <h1>Cooper Hanson's Portfolio</h1>
-            <h3>Welcome to my portfolio...<br>please come take a look around</h3>
-        </div>
-        <div id="about">
-            <h1>About Myself</h1>
-            <h2>My name is Cooper Hanson.</h2>
-            <h3>I am currently a student at Benilde-St.Margaret's and have a passion for developing. I live in New Hope, Minnesota, but the cold and the snow are not friends to me. At the age of 13 I built my first computer and have been playing video games ever since. Among my favorites are Counter Strike: Global Offensive, Pokemon, and Minecraft. I love sitting down to watch classic cartoons like the 1992 Batman series with a glass of cold milk and a box of oreos to share in the experience. When I'm not on my couch, I like to program. Currently, I am learning Python, HTML, and CSS with the hope of adding Java to that list soon.</h3>
-            <ul>
-                <li><img src="https://www.python.org/static/opengraph-icon-200x200.png"></li>
-                <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"></li>
-                <li><img src="https://pluralsight.imgix.net/paths/path-icons/css-c9b214f0d7.png"></li>
-                <li><img src="https://diylogodesigns.com/wp-content/uploads/2017/07/java-logo-vector-768x768.png"></li>
-            </ul>
-        </div>
-        <div class="projecttransition"><h1>Projects</h1>
-        </div>
-        <div id="projects">
-            <div class="corner-robot">
-                <h2>Turing Corners</h2>
-                <h3>This video is a demonstration of a Robot I programmed. The main goal was to have the Robot be aware of the distance between itself and a wall, then navigate accordingly. When the Robot gets to close to the wall it turns away, but if it gets too far it starts to come back. I set the robot free and watched it circumnavigate the classroom.</h3>
-                <div class="demonstration">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/XOkgtlfXseU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                <h3 class="code">import direction<br>apin = 7<br>while True:<br>  analog = RPL.analogRead(apin)<br>  if analog >= 300 and analog <= 400:  direction.front(10)<br>  elif analog > 400:<br>  direction.left(7)<br>  elif analog < 300:<br>  direction.right(7)<br><br>###Direction Lib<br><br>L = 0<br>R = 1<br>def convert(speed):<br>  R = int(-20 * speed + 1600)<br>  L = int(20 * speed + 1400)<br>  return(R,L)<br>#Default direction<br>def front(input):<br>  RPL.servoWrite(R, convert(input)[0])<br>  RPL.servoWrite(L, convert(input)[1])<br>def left(input):<br>  RPL.servoWrite(R,convert(input)[0])<br>def right(input):<br>  RPL.servoWrite(L,convert(input)[1])
-                </h3>
-                </div>
-            </div>
+    <p>This is the stuff I am working on</p>
 
-
-            <div class="euler">
-                <h2>Euler</h2>
-                <h3>Using Python, I have solved multiple Euler problems. This is the code for Euler problem #5. I chose to demonstrate this code because of it's ability to test itself for errors. This sped up the process of debugging when the first code I wrote for the actual program didn't work. It comes in three different modules. One with the actual code, one to run it, and one to test it for errors.</h3>
-                <div class="demonstration">
-                    <div class="mult4">
-                        <h3>
-
-numlist = []
-max = 99
-maximum = 999999999
-
-def factor(start, to):
-    numlist.clear()
-    for i in range(start,to + 1):
-        numlist.append(i)
-    while to > start:
-        for i in range(start, to):
-            if i == 0 or to == 0:
-                pass
-            elif to % i == 0 or to % i == -0:
-                if i in numlist:
-                    numlist.remove(i)
-        to = to - 1
-    if to <= start:
-        if 0 in numlist:
-            numlist.remove(0)
-        return(numlist)
-
-def math(start, to):
-    for numerator in range(to, maximum, to):
-        if all(numerator % denominator == 0 for denominator in numlist):
-            return(numerator)
-
-
-def check(start, to,):
-    if to < start:
-        return(error())
-    elif to - start > max:
-        return(error())
-    else:
-        return(True)
-def error():
-    return('um... something went wrong')
-
-                        </h3>
-                    </div>
-                    <div class="autotest">
-                        <h3>
-
-import mult4code
-givenstart = 1
-givento = 10
-expectedcheck = True
-expectedfactor = [6, 7, 8, 9, 10]
-expectedmath = 2520
-expectedlist = [expectedcheck, expectedfactor, expectedmath]
-check = mult4code.check(givenstart,givento)
-factor = mult4code.factor(givenstart,givento)
-math = mult4code.math(givenstart,givento)
-
-if expectedmath == math and expectedfactor == factor and expectedcheck == check:
-    print('Test Complete: Everything works dandily.')
-else:
-    if expectedmath != math:
-        print('math failed')
-        print('expected output %s, received output %s' % (expectedmath, math))
-    if expectedfactor != factor:
-        print('factor failed')
-        print('expected output %s, received output %s' % (expectedfactor, factor))
-    if expectedcheck != check:
-        print('check failed')
-        print('expected output %s, received output %s' % (expectedcheck, check))
-
-
-                        </h3>
-                    </div>
-                </div> <!-- demonstration -->
-            </div>
-
-            <div class="rapidrobo">
-                <h2>Rapid Manufacturing</h2>
-                <h3>This is a robot I programmed for the RoboCup tournament. It is a fully autonomous puzzle solving machine. It is designed for disaster situations to go into dangerous areas and gather information to help the first responders.</h3>
-                <div class="demonstration">
-                    <img src="./pics/rapid.jpg" height="325" width="560">
-
-                    <video controls height="325"> <source src="./pics/rapid.mp4" type="video/mp4"></video>
-                </div> <!-- demonstration -->
-            </div> <!-- rapid robo-->
-            <div class="music">
-                <h2>Bluetooth Music</h2>
-                <h3>This is a speaker that I found. I was able to connect it to my phone wirelessly with bluetooth and was able to wire a control board and microphone into it.</h3>
-                <div class="demonstration">
-                    <video controls height="355"> <source src="./pics/music.mp4" type="video/mp4"></video>
-                </div><!-- demonstration -->
-
-            </div><!--music-->
-
-            <div class="arm">
-                <h2>Robotic Arm</h2>
-                <h3>This is a robotic arm I am programming (This is only the first release, it will look better I promise!) and it will be used to grasp things and open doors at the RoboCup competition. </h3>
-                <div class="demonstration">
-                    <video controls height="355"> <source src="./pics/armVid.mp4" type="video/mp4"></video>
-                </div><!-- demonstration -->
-            </div><!--arm-->
-
-
-        </div> <!-- keep this as project div -->
-        <div id="contact"></div>
-        <div class="contact">
-            <h1>Contact</h1>
-            <p>Coming soon.</p>
-        </div> <!-- contact close -->
-
-        <div id="random"></div>
-        <div class="random">
-            <h1>Random</h1>
-            <h3>Literally just a bunch of random stuff</h3>
-            <h5>There is nothing here</h5>
-            <h5>Just hire me already</h5>
-        </div>
-
-    </body>
-    <!-- -->
+</body>
 </html>
+
+
+
+<!--
+body
+    header
+        nav
+    main
+    footer
+-->
