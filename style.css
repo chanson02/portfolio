@@ -1,22 +1,54 @@
+/*
+Things to remember
+transiton: background-color: 0.3s;
+ */
+
+
 /* setting defaults */
 * {
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 
 
 body {
     background-color: black;
-    margin: 0px;
     font-family: Verdana;
     font-size: 18px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
-header {
-    height: 100vh
-}
 
 p {
-    color: white;
+}
+
+
+/* Header */
+
+header {
+    height: 100vh;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.title img {
+    width: 25vw;
+    height: 25vw;
+    overflow: hidden;
+    border-radius: 2vw;
+}
+
+.name {
+    padding: 2.5vw;
 }
