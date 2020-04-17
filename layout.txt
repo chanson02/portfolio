@@ -2,6 +2,6 @@ Cooper Hanson
 
 Resume - - About
 
-Resume = Work Experience, Python, Web Dev, Mobile
+Resume = Python, Web Dev, Mobile
 
-About = Miata, Birthday, Contact Info
+About = Miata, Age + Experience, Contact Info

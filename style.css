@@ -11,6 +11,9 @@ transiton: background-color: 0.3s;
   color: white;
 }
 
+a {
+    text-decoration: none;
+}
 
 
 body {
@@ -32,7 +35,6 @@ p {
 header {
     height: 100vh;
     text-align: center;
-    font-size: 1.5vw;
 }
 
 .title {
@@ -50,5 +52,54 @@ header {
 }
 
 .name {
-    padding: 2.5vw;
+    font-size: 1.5vw;
+    line-height: 3vw;
+}
+
+
+.buttons {
+    display: inline-block;
+}
+
+.buttons button {
+    padding: 1vw;
+    margin: 2vw;
+    margin-top: 3vw;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: black;
+    color: white;
+    font-size: 2vw;
+    transition: 1s;
+    text-decoration: none;
+}
+
+.buttons button:hover {
+    background-color: green;
+}
+
+
+
+/* Resume */
+
+
+.resume {
+    /* border: 1px solid white; */
+    width: 90vw;
+    margin-left: 5vw;
+}
+
+
+.resume button {
+    background-color: black;
+    width: 27%;
+    /* height: width; */
+    height: calc(0.27 * 90vw);
+    margin: 2.9%;
+}
+
+
+.resume h1 {
+    border: 1px solid white;
+    margin-bottom: 121231231px;
 }
