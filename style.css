@@ -26,8 +26,8 @@ body {
 }
 
 
-p {
-}
+/* p {
+} */
 
 
 /* Header */
@@ -78,7 +78,9 @@ header {
     background-color: green;
 }
 
-
+/*  */
+/* MAIN */
+/*  */
 
 /* Resume */
 
@@ -92,14 +94,27 @@ header {
 
 .resume button {
     background-color: black;
-    width: 27%;
-    /* height: width; */
-    height: calc(0.27 * 90vw);
-    margin: 2.9%;
+    width: 20%;
+    margin: 2%;
+    height: calc(0.2 * 90vw);
 }
 
 
 .resume h1 {
     border: 1px solid white;
     margin-bottom: 121231231px;
+}
+
+
+#python {
+    display: none;
+}
+#webdev {
+    display: none;
+}
+#mobile {
+    display: none;
+}
+#other {
+    display: none;
 }
