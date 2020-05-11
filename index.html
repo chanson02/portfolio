@@ -20,7 +20,7 @@
 <body>
     <header>
         <div class="title">
-            <img src="/pics/2c.jpg">
+            <img draggable="false" src="/pics/2c.jpg">
             <div class="name">
                 <h1>Cooper Hanson</h1>
                 <p>Software Engineer</p>
@@ -38,36 +38,103 @@
     <main>
         <div class="resume">
             <a name="resume"></a>
+
+
+            <!-- Category Buttons -->
+
+
             <!-- Python Button -->
             <button onclick="showPython()">
+                <img draggable="false" src="./pics/pythonlogoc.png">
                 <h1>Python</h1>
             </button>
 
 
             <!-- Web Dev Button -->
             <button onclick="showWebDev()">
+                <img draggable="false" src="./pics/htmllogo.png">
                 <h1>Web Dev</h1>
             </button>
 
 
             <!-- Mobile Button -->
             <button onclick="showMobile()">
+                <img draggable="false" src="./pics/swiftlogo.png">
                 <h1>Mobile</h1>
             </button>
 
             <!-- Other Button -->
             <button onclick="showOther()">
+                <img draggable="false" src="./pics/m.jpg">
                 <h1>Other</h1>
             </button>
 
 
-            <div id="generic">
-                <p>this is generic info</p>
-            </div>
+            
+            
+            <!-- Category Information -->
+
+
 
             <!-- Python Projects -->
             <div id="python">
-                <p>This is all about python</p>
+                <div id="project_container">
+                    <img src="pics/knight_head.png">
+                    <div class="project_info">
+                        <h1>BSM Robotics</h1>
+                        <p>I spent three years taking the engineering course at Benilde-St.Margaret's. Two of those years I spent writing software for the Robotics team.
+                            My first year on the Robotics team I focused heavily on robot autonomy. Using a robot another student made, I programmed a python script that would get the robot out of a maze.
+                            That robot was taken to the Robo Cup Tournament in 2019 and scored BSM the most points in the history of us participating in the RoboCup competition.
+                        </p>
+                        <p>When I came back the next year, my task was to make a user-interface to control a robot at the next RoboCup tournament. My partner and I decided we wanted wireless control over our robot.
+                            My partner was in-charge of the front-end and user-control and used the pygame library to create it. My job was to handle all data to turn the user input into robot action.
+                            The person controlling the robot hosted a server from their laptop in which the robots clients would connect. Each part of the robot, the Arm, Motors, Cameras, Sensors, etc, had it's own client (raspberrypi).
+                            The server would be able to handle network drops and even reconnect clients. Unfortunatley, due to the COVID-19 outbreak the RoboCup Tournament was cancelled.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="project_container">
+                    <img src="pics/covid.png">
+                    <div class="project_info">
+                        <h1>Auto Attendance Bot</h1>
+                        <p>When the Stay at Home executive order happened, closing down all schools, my school went into an online virtual environment.
+                            We had a system put into place to deal with snow days, but our system was not designed for extended online school.
+                            Because of this, the administration was figuring out online school as we were doing it.
+                            That lead to random updates happening, and it was very hard to keep track of. For example, originally, student's needed to sign in by 2:00 each day for attendance reasons.
+                            Then one day, it magically changed to 12:00, after a few more weeks it became 10:00. All the changing was too confusing for me, and I even missed a day, so I made a bot that would automatically do it for me.
+                            Each day, my computer would turn itself on and run a python script at 8:00 to sign me into attendance. I added an interface to it and a rudimentary password algorithm and passed it around my school for the other students.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="project_container">
+                    <img src="pics/fb.png">
+                    <div class="project_info">
+                        <h1>Facebook Car Bot</h1>
+                        <p>In early 2020 I was unfortunatley involved in an auto accident and my car was totalled. I spent a lot of time searching websites for cheap but still decent cars.
+                            I had a $3000 budget, and it's hard to find something at that price.
+                            I was getting frustrated with how my search was going because I kept stumbling on cars I had already reviewed and my feed was inflated with junkers I had no interest in.
+                            So, to make the process a bit easier, I developed my car bot. I had a google spreadsheet that I used to organize all the cars I was looking at.
+                            I used the google sheets API for python to look at the cars in my spreadsheet, and automatically search the facebook market place to find a better value.
+                            There's a json file that holds all the cars recommended to me by the bot so it doesn't give me the same one twice.
+                            I added a function to calculate perceived worth of car, taking into account year, milage, and price. If the perceived score was similar or greater to my current best car, it would automatically add it to my google spread sheet.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="project_container">
+                    <img src="pics/disc.png">
+                    <div class="project_info">
+                        <h1>Discord Bot</h1>
+                        <p>When the Stay at Home order went into effect many programs and activities had to switch to an online virtual environment. One of thos activities was my schools Drone Racing Team.
+                            The Drone Racing team had decided to use Discord as their means of communication during the quarantine. A member of the team contacted me and told me about how it was plainly obvious the groups supervisors had no idea how to use discord.
+                            Him and I quickly started brainstorming ideas on how to keep everyone and everything organized on the server. The main problem they were facing was giving the appropriate server roles to new members.
+                            Using the discordpy library, I was able to quickly throw together a bot that would handle the servers members and make sure everything was properly in order.
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Web Dev Projects -->
@@ -95,6 +162,9 @@
     </main>
 
 </body>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
 </html>
 
 

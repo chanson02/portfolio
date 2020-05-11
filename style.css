@@ -20,11 +20,14 @@ body {
     background-color: black;
     font-family: Verdana;
     font-size: 18px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
+button:focus {
+    outline: none;
+}
 
 /* p {
 } */
@@ -48,7 +51,7 @@ header {
     width: 25vw;
     height: 25vw;
     overflow: hidden;
-    border-radius: 2vw;
+    /* border-radius: 2vw; */
 }
 
 .name {
@@ -93,21 +96,59 @@ header {
 
 
 .resume button {
-    background-color: black;
+    background-color: rgb(138, 136, 136);
     width: 20%;
     margin: 2%;
     height: calc(0.2 * 90vw);
+    /* font-size: 80%; */
+    border: none; 
+    background: black;
+}
+
+.resume h1 {
+    width: 100%;
+}
+
+.resume button img {
+    width: 90%;
 }
 
 
 .resume h1 {
-    border: 1px solid white;
-    margin-bottom: 121231231px;
+    /* border: 1px solid white; */
+    /* margin-bottom: 121231231px; */
 }
 
 
+/* This holds the project styling */
+#project_container {
+    /* border: 1px solid white; */
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+#project_container img {
+    float: left;
+    padding-right: 20px;
+}
+
+#project_container .project_info {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 0px 20px;
+}
+#project_container ::-webkit-scrollbar {
+    width: 1px;
+    background: #FF0000;
+}
+
+/* These are the individual blocks that people click on */
 #python {
     display: none;
+    /* display: inline-block; */
 }
 #webdev {
     display: none;
@@ -118,3 +159,57 @@ header {
 #other {
     display: none;
 }
+
+
+
+
+/* Media Querry */
+@media only screen and (max-width: 600px) {
+
+    /* HEADER */
+    
+    .title img {
+        width: 75vw;
+        height: 75vw;
+    }
+    
+    .name {
+        font-size: 4vw;
+        line-height: 7.5vw;
+    }
+
+    .buttons button {
+        padding: 1vw;
+        margin: 2vw;
+        margin-top: 3vw;
+        font-size: 7vw;
+    }
+
+    /* CLOSE HEADER */
+
+
+    /* Buttons to toggle projects */
+    .resume button {
+        width: 40%;
+        margin: 20% 4.6%;
+        height: 18vw;
+    }
+
+
+    #project_container {
+        height: 150px;
+        padding: 20px 0px;
+        font-size: 14px;
+    }
+    #project_container img {
+        width: 150px;
+        float: left;
+        padding-right: 20px;
+    }
+    
+    #project_container .project_info {
+        height: 150px;
+        padding: 0px 20px;
+    }
+    
+  }
