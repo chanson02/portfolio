@@ -175,6 +175,10 @@ header {
 /* Media Querry */
 @media only screen and (max-width: 800px) {
 
+    body {
+        font-size: 14px;
+    }
+
     /* HEADER */
     
     .title img {
@@ -204,21 +208,14 @@ header {
         height: 18vw;
     }
 
-
-    #project_container {
-        height: 150px;
-        padding: 20px 0px;
-        font-size: 14px;
-    }
-    #project_container img {
-        width: 150px;
-        float: left;
-        padding-right: 20px;
-    }
-    
+    /* PROJECTS */
     #project_container .project_info {
-        height: 150px;
-        padding: 0px 20px;
+        /* border: 1px solid white; */
+        height: 90%;
+        overflow: auto;
+    }
+    #project_container ::-webkit-scrollbar {
+        height: 1px;
     }
     
   }
