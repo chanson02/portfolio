@@ -209,6 +209,13 @@ header {
     }
 
     /* PROJECTS */
+
+    #project_container img {
+        height: 150px;
+        width: 150px;
+    }
+
+
     #project_container .project_info {
         /* border: 1px solid white; */
         height: 90%;
