@@ -149,6 +149,12 @@ header {
     background: #FF0000;
 }
 
+
+.project_info a {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 /* These are the individual blocks that people see when they click on a category */
 #python {
     display: none;
